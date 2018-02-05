@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "FirstViewController.h"
+#import "UIViewController+LSTranstionAnimation.h"
 
 @interface ViewController ()
 
@@ -16,8 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
+
+- (IBAction)onClickToPresent:(id)sender {
+    [self present:[[FirstViewController alloc] init] animation:UIViewAnimationOptionTransitionFlipFromRight];
+}
+
+- (IBAction)onClickToPush:(id)sender {
+    [self push:[[FirstViewController alloc] init] animation:UIViewAnimationOptionTransitionFlipFromRight];
+}
+
 
 
 - (void)didReceiveMemoryWarning {
