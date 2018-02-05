@@ -1,1 +1,3 @@
 #TranstionAnimation
+一款present、dismiss、push、pop动画过度的demo
+里面暂时只支持动画变化，需要的可以模仿里面的逻辑进行动画变化
