@@ -36,5 +36,17 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (void)popToViewController:(UIViewController *)toVc animation:(UIViewAnimationOptions)animation {
+    LSTranstionNaviAnimator *animator = [LSTranstionNaviAnimator animationWithTranstionType:QYLTranstionTypeOut animation:animation];
+    self.navigationController.delegate = animator;
+    [self.navigationController popToViewController:toVc animated:YES];
+}
+
+- (void)popToRootWithAnimation:(UIViewAnimationOptions)animation {
+    LSTranstionNaviAnimator *animator = [LSTranstionNaviAnimator animationWithTranstionType:QYLTranstionTypeOut animation:animation];
+    self.navigationController.delegate = animator;
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 
 @end

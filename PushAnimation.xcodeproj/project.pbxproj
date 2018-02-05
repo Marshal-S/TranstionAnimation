@@ -17,8 +17,8 @@
 		F3C8433120259EEB00B28411 /* PushAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8433020259EEB00B28411 /* PushAnimationUITests.m */; };
 		F3C843412025A0F500B28411 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8433F2025A0F500B28411 /* FirstViewController.m */; };
 		F3C843422025A0F500B28411 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C843402025A0F500B28411 /* FirstViewController.xib */; };
-		F3F49D6F2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F49D6E2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.m */; };
-		F3F49D762028366600BFD4D3 /* LSTranstionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F49D752028366600BFD4D3 /* LSTranstionAnimator.m */; };
+		F3F49D8A2028438300BFD4D3 /* LSTranstionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F49D872028438200BFD4D3 /* LSTranstionAnimator.m */; };
+		F3F49D8B2028438300BFD4D3 /* UIViewController+LSTranstionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F49D882028438200BFD4D3 /* UIViewController+LSTranstionAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +58,10 @@
 		F3C8433E2025A0F500B28411 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		F3C8433F2025A0F500B28411 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		F3C843402025A0F500B28411 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
-		F3F49D6D2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LSTranstionAnimation.h"; sourceTree = "<group>"; };
-		F3F49D6E2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LSTranstionAnimation.m"; sourceTree = "<group>"; };
-		F3F49D742028366600BFD4D3 /* LSTranstionAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSTranstionAnimator.h; sourceTree = "<group>"; };
-		F3F49D752028366600BFD4D3 /* LSTranstionAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSTranstionAnimator.m; sourceTree = "<group>"; };
+		F3F49D862028438200BFD4D3 /* UIViewController+LSTranstionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LSTranstionAnimation.h"; sourceTree = "<group>"; };
+		F3F49D872028438200BFD4D3 /* LSTranstionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTranstionAnimator.m; sourceTree = "<group>"; };
+		F3F49D882028438200BFD4D3 /* UIViewController+LSTranstionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LSTranstionAnimation.m"; sourceTree = "<group>"; };
+		F3F49D892028438200BFD4D3 /* LSTranstionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTranstionAnimator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +112,7 @@
 		F3C8430B20259EEB00B28411 /* PushAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				F3F49D742028366600BFD4D3 /* LSTranstionAnimator.h */,
-				F3F49D752028366600BFD4D3 /* LSTranstionAnimator.m */,
-				F3F49D6D2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.h */,
-				F3F49D6E2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.m */,
+				F3F49D852028438200BFD4D3 /* TransAnimation */,
 				F3C8430C20259EEB00B28411 /* AppDelegate.h */,
 				F3C8430D20259EEB00B28411 /* AppDelegate.m */,
 				F3C8430F20259EEB00B28411 /* ViewController.h */,
@@ -148,6 +145,17 @@
 				F3C8433220259EEB00B28411 /* Info.plist */,
 			);
 			path = PushAnimationUITests;
+			sourceTree = "<group>";
+		};
+		F3F49D852028438200BFD4D3 /* TransAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				F3F49D862028438200BFD4D3 /* UIViewController+LSTranstionAnimation.h */,
+				F3F49D872028438200BFD4D3 /* LSTranstionAnimator.m */,
+				F3F49D882028438200BFD4D3 /* UIViewController+LSTranstionAnimation.m */,
+				F3F49D892028438200BFD4D3 /* LSTranstionAnimator.h */,
+			);
+			path = TransAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,10 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3F49D6F2025BAF600BFD4D3 /* UIViewController+LSTranstionAnimation.m in Sources */,
 				F3C8431120259EEB00B28411 /* ViewController.m in Sources */,
-				F3F49D762028366600BFD4D3 /* LSTranstionAnimator.m in Sources */,
+				F3F49D8B2028438300BFD4D3 /* UIViewController+LSTranstionAnimation.m in Sources */,
 				F3C8431C20259EEB00B28411 /* main.m in Sources */,
+				F3F49D8A2028438300BFD4D3 /* LSTranstionAnimator.m in Sources */,
 				F3C8430E20259EEB00B28411 /* AppDelegate.m in Sources */,
 				F3C843412025A0F500B28411 /* FirstViewController.m in Sources */,
 			);
